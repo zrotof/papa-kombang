@@ -1,8 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import * as AOS from 'aos';
 import { faFaceLaugh } from '@fortawesome/free-solid-svg-icons'
 import { faFaceMehBlank, faFaceMeh, faFaceSmile } from '@fortawesome/free-regular-svg-icons'
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 
 @Component({
   selector: 'app-root',
@@ -14,11 +16,16 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     FontAwesomeModule
   ]
 })
-export class AppComponent {
-  title = 'angular-starter-stanfdalone-architecture-V15';
+export class AppComponent implements OnInit {
+  title = 'angular-starter-v16-standalone';
 
   faFaceSmile = faFaceSmile;
   faFaceMehBlank = faFaceMehBlank;
   faFaceMeh = faFaceMeh;
   faFaceLaugh = faFaceLaugh;
+
+  ngOnInit(): void {
+    AOS.init();
+  }
+  
 }

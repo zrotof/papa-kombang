@@ -1,8 +1,8 @@
 # AngularStarterModuleArchitectureV15
 
-The aim of this project is to provide a set of tools and configurations to facilitate the initialization of an Angular project with a module architecture 
+The aim of this project is to provide a set of tools and configurations to facilitate the initialization of an Angular standalone base project
 
-It use 15.2.9 version
+It use 16.2.12 version
 
 # What is included
 
@@ -10,11 +10,10 @@ It use 15.2.9 version
 - variables.scss (to init css variables)
 - Prine ng
 - Prine ng icons
-- font awesome (free solid & regular version )
-- Shared module
-- Core module
-- Features modules
+- font awesome (free solid & regular version & brand )
 - Angular universal (SSR)
+- AOS (animation library)
+- skeletton of a good common folder structure for project
 
 # Instructions to launch the project
 

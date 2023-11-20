@@ -7,10 +7,10 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
+    "prerender": "ng run angular-starter-module-architecture-V15:prerender",
     "dev:ssr": "ng run angular-starter-module-architecture-V15:serve-ssr",
     "serve:ssr": "node dist/angular-starter-module-architecture-V15/server/main.js",
-    "build:ssr": "ng build && ng run angular-starter-module-architecture-V15:server",
-    "prerender": "ng run angular-starter-module-architecture-V15:prerender"
+    "build:ssr": "ng build && ng run angular-starter-module-architecture-V15:server"
   },
   "private": true,
   "dependencies": {
@@ -22,19 +22,17 @@
     "@angular/forms": "^15.2.9",
     "@angular/platform-browser": "^15.2.9",
     "@angular/platform-browser-dynamic": "^15.2.9",
-    "@angular/platform-server": "^15.2.9",
     "@angular/router": "^15.2.9",
     "@fortawesome/angular-fontawesome": "^0.12.1",
     "@fortawesome/fontawesome-svg-core": "^6.2.1",
     "@fortawesome/free-regular-svg-icons": "^6.2.1",
     "@fortawesome/free-solid-svg-icons": "^6.2.1",
-    "@nguniversal/express-engine": "^15.2.1",
     "express": "^4.15.2",
     "primeicons": "^6.0.1",
     "primeng": "^15.4.1",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
-    "zone.js": "~0.11.4"
+    "zone.js": "^0.14.2"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^15.2.9",

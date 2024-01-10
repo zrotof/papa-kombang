@@ -1,0 +1,13 @@
+<div class="navigation-small-screen">
+
+    <ul>
+        <ng-container *ngFor="let menu of menus">
+            <li>
+                <a (click)=" onNavigationClicked()" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}" routerLink={{menu.url}}>
+                    {{menu.label}}
+                </a>
+            </li>    
+        </ng-container>
+    </ul>
+
+</div>

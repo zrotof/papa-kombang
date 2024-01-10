@@ -1,0 +1,177 @@
+.accommodation-item{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin: 2rem 0;
+
+        img{
+            height: 300px;
+            width: 400px;
+            flex: none;
+            object-fit: cover;
+        }
+
+        .text-bloc{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: fit-content;
+            padding: 0 0 0 3rem;
+
+            h3{
+                font-size: 1.5rem;
+                margin-bottom: 15px;
+            }
+
+            p{
+                font-size: 15px;
+                line-height: 21px;
+            }
+
+            .descriptions{
+                margin-bottom: 17px;
+                
+            }
+
+            .distances{
+                display: flex;
+                gap: 1.5rem;
+                flex-wrap: wrap;
+                margin-bottom: 17px;
+
+                .distance{
+                    display: flex;
+                    align-items: center;
+                    padding-left: 10px;
+                    border-left: 3px solid #f29c35;
+
+                    i{
+                        font-size: 1.8rem;
+                        margin-right: 5px;
+                    }
+
+                    p{
+                        &:nth-child(2){
+                            line-height: 15px;
+                            width: 60px;
+                            margin-right: 15px;
+                            font-style: italic;
+                            font-weight: bold;
+                            font-size: 13px;
+                            color: black;
+                        }
+
+                        &:nth-child(3){
+                            font-size: 1.8rem;
+                        }
+                    }
+                }
+            }
+
+
+            .price{
+                padding: 5px 10px;
+                display: flex;
+                flex-direction: column;
+                background-color: rgb(224, 224, 224);
+                border-radius: 5px;
+                margin-bottom: 25px;
+                width: fit-content;
+                
+                p{
+        
+                    &:nth-child(1) {
+                        font-size: 13px !important;
+                    }
+        
+                    &:nth-child(2){
+                        font-size: 18px !important;
+                    }
+                }
+            }
+        
+
+            a{
+                color: black;
+                font-size: 13px;
+                font-style: italic;
+                font-weight: bold;
+            }
+
+        }
+}
+
+@media all and (max-width: 1024px){
+    .accommodation-item{
+        .text-bloc{
+            padding: 0 0 0 2rem;
+
+            h3{
+                font-size: 1.3rem;
+            }
+
+            .price{
+                padding: 3px 8px;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 922px){
+    .accommodation-item{
+        align-items: flex-start;
+    }
+}
+
+@media all and (max-width: 768px){
+    .accommodation-item{
+        flex-direction: column;
+
+        img{
+            height: 400px;
+            width: 100%;
+            max-width: 700px;
+        }
+
+        .text-bloc{
+            padding: 2rem 0 0 0;
+            align-items: center;
+
+            p{
+                text-align: center;
+            }
+
+            .descriptions{
+                margin-bottom: 15px;
+            }
+
+            .distances{
+                margin-bottom: 15px;
+            }
+
+            .price{
+                padding: 3px 8px;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 482px){
+    .accommodation-item{
+        img{
+            height: 250px;
+        }
+
+        .text-bloc{
+            padding: 1.5rem 0 0 0;
+
+            .descriptions{
+                margin-bottom: 15px;
+            }
+
+            .distances{
+                justify-content: center;
+            }
+        }
+    }
+}

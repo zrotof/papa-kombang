@@ -1,0 +1,242 @@
+.hero-banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100vh;
+    height: 100svh;
+
+    background-image: url("../../../../../../../assets/img/home/hero-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    overflow: hidden;
+
+    .content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+        .text-bloc{
+            display: flex;
+            flex-direction: column;
+            max-width: 550px;
+            margin-top: 5rem;
+
+            .announce{
+                color: var(--sn-gold-color);
+                padding: 7px 20px;
+                margin-bottom: 20px;
+                background-color: var(--sn-gold-color);
+                width: fit-content;
+                color: black;
+                font-weight: bold;
+                font-size: 18px;
+            }
+
+            .names{
+                display: flex;
+                align-items: baseline;
+
+                .name{
+                    font-family: 'Beau Rivage', cursive;
+                    color: white;
+                    font-size: 4rem;
+                    line-height: 5rem;
+                }
+    
+                .name-union{
+                    color: var(--sn-gold-color);
+                    font-size: 2rem;
+                    margin: 0 15px 0 25px;
+                }
+            }
+
+            .text{
+                color: white;
+                font-size: 15px;
+                line-height: 23px;
+                margin-bottom: 20px;
+            }
+
+            .dates{
+                display: flex;
+                gap: 3rem;
+
+                .date-bloc{
+                    border-left: 3px solid var(--sn-gold-color);
+                    display: flex;
+                    flex-direction: column;
+                    padding-left: 15px;
+
+                    .date{
+                        color: white;
+                        font-size: 13px;
+                        letter-spacing: 3px;
+                        margin-bottom: 7px;
+                    }
+
+                    .day{
+                        margin-bottom: 7px;
+                        font-size: 1.3rem;
+                        color: white;
+                        font-weight: bold;
+                    }
+
+                    .label{
+                        font-size: 13px;
+                        color: white;
+                        letter-spacing: 3px;
+                    }
+                }
+            }
+        }
+    
+        img{
+            position: absolute;
+            bottom: 0;
+            width: 850px;
+            right: -130px;
+        }
+    }
+}
+
+@media all and (max-width: 1280px){
+    .hero-banner{
+        .content{        
+            img{
+                width: 750px;
+            }
+        }
+    }
+    
+}
+
+@media all and (max-width: 1155px){
+    .hero-banner{
+        .content{
+            .text-bloc{
+                max-width: 460px;
+            }
+        
+            img{
+                width: 700px;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 950px){
+    .hero-banner{
+        height: fit-content;
+
+        .content{
+            flex-direction: column;
+            gap: 5rem;
+
+            .text-bloc{
+                max-width: 800px;
+                align-items: center;
+                margin-top: 12rem;
+
+                .text{
+                    text-align: center;
+                }
+            }
+        
+            img{
+                position: relative;
+                width: 700px;
+                right: 0;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 768px){
+    .hero-banner{
+        .content{
+            .text-bloc{
+                margin-top: 12rem;
+            }
+
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 480px){
+    .hero-banner{
+        .content{
+            gap: 0;
+            flex-direction: column-reverse;
+
+            .text-bloc{
+                margin-top: 0;
+                margin-bottom: 3rem;
+
+                .announce{
+                    padding: 8px 15px;
+                    margin-bottom: 15px;
+                    font-size: 15px;
+                    width: 100%;
+                    text-align: center;
+                    border-radius: 3px;
+                }
+    
+                .names{
+                    display: flex;
+                    align-items: baseline;
+    
+                    .name{
+                        font-size: 2.5rem;
+                    }
+        
+                    .name-union{
+                        margin: 0 15px 0 23px;
+                    }
+                }
+    
+                .text{
+                    font-size: 15px;
+                    line-height: 21px;
+                    margin-bottom: 25px;
+                }
+    
+                .dates{
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    gap: 2rem;
+
+                    .date-bloc{
+                        border-left: unset;
+                        padding-left: 0;
+                        align-items: center;
+    
+                        .day{
+                            font-size: 1.2rem;
+                            color: var(--sn-gold-color);
+                        }
+    
+                        .label{
+                            letter-spacing: 2px;
+                        }
+                    }
+                }
+            }
+
+            img{
+                width: 100%;
+                margin-top: 8rem;
+                right: -12px;
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+<div class="gift-ways">
+    <div class="content my-container">
+        <ng-container *ngFor="let giftWay of giftWays">
+            <div class="gift-way">
+                <img src={{giftWay.logo}}>
+                <ng-container *ngIf=" giftWay.type === 'with-no-link'; else withLink ">
+                    <p> {{giftWay.number}} </p>
+                </ng-container>
+                <ng-template #withLink>
+                    <a target="_blank" href={{giftWay.link}}> {{giftWay.linkName}} </a>
+                </ng-template>
+            </div>
+        </ng-container>
+    </div>
+</div>

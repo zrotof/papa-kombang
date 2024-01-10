@@ -4,6 +4,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import * as AOS from 'aos';
 import { faFaceLaugh } from '@fortawesome/free-solid-svg-icons'
 import { faFaceMehBlank, faFaceMeh, faFaceSmile } from '@fortawesome/free-regular-svg-icons'
+import { HeaderComponent } from './core/components/header/header.component';
+import { FooterComponent } from './core/components/footer/footer.component';
 
 
 @Component({
@@ -13,7 +15,9 @@ import { faFaceMehBlank, faFaceMeh, faFaceSmile } from '@fortawesome/free-regula
   standalone : true,
   imports : [
     RouterOutlet,
-    FontAwesomeModule
+    FontAwesomeModule,
+    HeaderComponent,
+    FooterComponent
   ]
 })
 export class AppComponent implements OnInit {

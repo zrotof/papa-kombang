@@ -1,0 +1,211 @@
+.counter-event{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 7rem;
+    margin-bottom: 5rem;
+
+    .content{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        .card{
+            height: fit-content;
+            background-color: var(--project-primary-color);
+            color: var(--project-secondary-color);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
+
+            h2{
+                margin-bottom: 20px;
+                font-size: 2rem;
+                text-shadow: 0px 3px 15px #0000005c;
+            }
+
+            .countdown {
+                display: flex;
+                justify-content: center;
+
+                .countdown-item {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    position: relative;
+                    margin-right: 20px;
+
+                    &:last-child{
+                        margin-right: 0;
+                    }
+
+                    &:not(:first-child){
+                        padding-left : 50px;
+
+                        &::after{
+                            position: absolute;
+                            content: ":";
+                            top: 50%;
+                            left: 0;
+                            font-size: 4rem;
+                            transform: translateY(-50%);
+                        }
+                    }
+
+                    span{
+                        &:first-child{
+                            font-size: 3.5rem;
+                            margin-bottom: 0px;
+                            font-weight: 400;
+                        }
+    
+                        &:last-child{
+                            font-weight: 100;
+                        }
+                    }
+                    
+                  }
+            }
+
+            img{
+                position: absolute;
+
+                width: 455px;
+                bottom: 0;
+                right: 0;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 1024px){
+    .counter-event{
+        margin-bottom: 4rem;
+
+        .content{
+            .card{    
+                h2{
+                    margin-bottom: 17px;
+                    font-size: 1.8rem;
+                }
+
+                button{
+                    margin-bottom: 20px;
+                }
+    
+                .countdown {
+                    .countdown-item {
+                        margin-right: 10px;
+    
+                        &:not(:first-child){
+                            padding-left : 30px;
+    
+                            &::after{
+                                font-size: 3rem;
+                            }
+                        }
+    
+                        span{
+                            &:first-child{
+                                font-size: 2.5rem;
+                            }
+        
+                            &:last-child{
+                                font-size: 15px;
+                            }
+                        }
+                        
+                      }
+                }
+    
+                img{
+                    width: 350px;
+                    right: -40px;
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 840px){
+    .counter-event{
+        .content{
+            .card{
+                img{
+                    width: 295px;
+                    right: -30px;
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 705px){
+    .counter-event{
+        .content{
+            .card{
+                width: 100%;
+                align-items: center;
+
+                h2{
+                    font-size: 1.5rem;
+                    text-align: center;
+                }
+
+                button{
+                    margin-top: 5px;
+                }
+    
+                img{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 490px){
+    .counter-event{
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+
+        .content{
+            .card{    
+                h2{
+                    margin-bottom: 17px;
+                    font-size: 1.3rem;
+                }
+
+                button{
+                    font-size: 15px;
+                }
+    
+                .countdown {
+                    .countdown-item {
+                        margin-right: 10px;
+    
+                        &:not(:first-child){
+                            padding-left : 15px;
+    
+                            &::after{
+                                font-size: 1rem;
+                            }
+                        }
+    
+                        span{
+                            &:first-child{
+                                font-size: 1.4rem;
+                            }
+        
+                            &:last-child{
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

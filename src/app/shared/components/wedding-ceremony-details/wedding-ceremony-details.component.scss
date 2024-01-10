@@ -1,0 +1,150 @@
+.wedding-ceremony-details{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+
+    .content{
+        display: flex;
+        gap: 3rem;
+
+        .ceremony{
+            display: flex;
+            flex-direction: column;
+            flex: 1 ;
+
+            &:first-child{
+                align-items: flex-end;
+                p{
+                    text-align: right;
+                }
+        
+                .hour{
+                    flex-direction: row-reverse;
+                    
+                    i{
+                        margin-left: 10px;
+                        margin-right: 0;
+                    }
+                }
+        
+                .address{
+                    flex-direction: row-reverse;
+        
+                    i{
+                        margin-left: 10px;
+                        margin-right: 0;
+                    }
+        
+                    span{
+                        text-align: right;
+                    }
+        
+                }
+            }
+    
+            h3{
+                margin-bottom: 15px;
+            }
+    
+            .hour{
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px;
+    
+                i{
+                    margin-right: 10px;
+                    font-size: 1.5rem;
+                }
+            }
+    
+            .address{
+                display: flex;
+                margin-bottom: 10px;
+                align-items: center;
+    
+                i{
+                    font-size: 1.5rem;
+                    margin-right: 10px;
+                }
+            }
+    
+            p{
+                line-height: 23px;
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 768px){
+    .wedding-ceremony-details{
+        .content{
+            flex-direction: column;
+            .ceremony{
+                align-items: center;
+
+                &:first-child{
+                    align-items: center;
+
+                    p{
+                        text-align: center;
+                    }
+    
+                    .hour{
+                        flex-direction: column;
+                        
+                        i{
+                            margin-left: 0;
+                            margin-right: 0;
+                        }
+                    }
+    
+                    .address{
+                        flex-direction: column;
+    
+                        i{
+                            margin-left: 0;
+                            margin-right: 0;
+                        }
+
+                        span{
+                            text-align: center;
+                        }
+                    }
+
+                    p{
+                        text-align: center;
+                    }
+                }
+                
+                .hour{
+                    flex-direction: column;
+                    margin-bottom: 15px;
+                    
+                    i{
+                        margin-right: 0;
+                        margin-bottom: 5px;
+                    }
+                }
+
+                .address{
+                    margin-bottom: 15px;
+                    flex-direction: column;
+
+                    i{
+                        margin-right: 0;
+                        margin-bottom: 5px;
+                    }
+
+                    span{
+                        text-align: center;
+                    }
+                }
+
+                p{
+                    text-align: center;
+                }
+            }   
+        }
+    }
+}

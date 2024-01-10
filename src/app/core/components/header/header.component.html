@@ -1,0 +1,68 @@
+<header  #header>
+
+    <div class="content header-container">
+        <a 
+            routerLink="/" 
+            class="logo"
+            >
+            <span class="letter">S</span>
+            <span class="heart">&hearts;</span>
+            <span class="letter">N</span>
+        </a>
+    
+        <ul>
+            <ng-container *ngFor="let menu of menus">
+                <li>
+                    <ng-container *ngIf="!menu?.items; else dropdown">
+                        <a
+                            routerLinkActive="active-link" 
+                            [routerLinkActiveOptions]="{exact: true}"  
+                            routerLink={{menu.url}}
+                            >
+                            {{menu.label}}
+                            <ng-container *ngIf="menu.icon">
+                                <i class="pi {{menu.icon}}"></i>
+                            </ng-container>
+                        </a>
+                    </ng-container>
+                    <ng-template #dropdown>
+                        <a class="dropdown" (mouseenter)="onShowHideMenuItems()" (mouseleave)="onShowHideMenuItems()"> 
+                            <span>
+                                {{menu.label}}
+                                <i class="pi {{menu.icon}}"></i>
+                            </span>
+                            <div class="dropdown-menu-items" [ngClass]="displayMenuItems ? 'show-dropdown':'hide-dropdown'">
+                                <ng-container *ngFor="let item of menu.items;">
+                                    <a routerLink={{item.url}} routerLinkActive="active-link"> {{item.label}} </a>
+                                </ng-container>
+                            </div>
+                        </a>
+
+                    </ng-template>
+
+                </li>
+            </ng-container>
+        </ul>
+    
+        <div class="burger" [ngClass]="displayMenu === true ? 'show-cross' : ''" (click)="onBurgerMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <p-dialog 
+        [(visible)]="displayMenu" 
+        position="right" 
+        [draggable]="false"
+        [blockScroll] = "true"
+        styleClass = "nav-small-screen"
+        maskStyleClass = "mask-nav-small-screen"
+    >
+        <app-nav-small-screen 
+            (onNavigationOnSmallScreenEvent)="menuForSmallScreenHandler($event)"
+            >
+        </app-nav-small-screen>
+    </p-dialog>
+    
+</header>

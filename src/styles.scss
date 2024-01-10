@@ -6,8 +6,38 @@
     padding: 0;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
+    font-family: Verdana, sans-serif;
 }
 
 html {
     scroll-behavior: smooth;
+}
+
+.header-container{
+    max-width: 1400px;
+    padding: 0 20px;
+}
+
+.my-container{
+    max-width: 1300px;
+    padding: 0 20px;
+}
+
+.navbar-background-on-scroll{
+    background-color: var(--sn-green-color);
+    box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+    transition: all 0.5s ease-in-out;
+}
+
+.title{
+    font-size: 3rem;
+    margin-bottom: 40px;
+    font-family: 'Beau Rivage', cursive;
+    text-align: center;
+}
+
+@media all and (max-width: 490px){
+    .title{
+        font-size: 2rem;
+    }
 }

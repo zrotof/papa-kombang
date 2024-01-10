@@ -1,0 +1,43 @@
+.accommodation-list{
+    display: flex;
+    justify-content: center;
+
+    .content{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        .custom-tabs{
+            .p-tabview-nav-container{
+                .p-tabview-nav-link{
+                    border: none;
+
+                    .p-tabview-title{
+                        padding: 0.8rem 1rem ;
+                        font-size: 15px;
+                        font-weight: 450;
+                    }
+                }
+
+                .p-highlight{
+                    .p-tabview-nav-link{
+                        background: var(--sn-green-color);
+                        color: var(--sn-gold-color);
+                        border: none;
+
+                        .p-tabview-title{
+                            font-size: 15px;
+                            font-weight: 600;
+
+                        }
+                    }
+                }
+            }
+
+            .accommodations{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+}

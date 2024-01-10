@@ -1,0 +1,40 @@
+.page-intro{
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+
+    .content{
+        display: flex;
+        flex-direction: column;
+
+        h2{
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            font-weight: bold;
+            text-align: center;
+            width: 100%;
+        }
+
+        .texts{
+            margin-bottom: 4rem;
+
+            p{
+                font-size: 15px;
+                line-height: 23px;
+                text-align: center;
+                max-width: 800px;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 768px){
+    .religious-details{
+        margin-top: 4rem;
+        .content{
+            .text-bloc{
+                margin-bottom: 3rem;
+            }
+        }
+    }
+}

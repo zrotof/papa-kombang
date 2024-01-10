@@ -1,0 +1,24 @@
+<div class="hero-banner">
+    <div class="content my-container">
+        <div class="text-bloc">
+            <span class="announce" data-aos="zoom-in-right" data-aos-delay="900">Nous nous marrions !</span>
+            <div class="names" data-aos="fade-right" data-aos-delay="100">
+                <span class="name">Samuel</span>
+                <span class="name-union">&</span>
+                <span class="name">Nadia</span>
+            </div>
+            <p class="text">Le compte à rebours final avant le grand jour a commencé ! Bientôt, nos "OUI" seront échangés, et nous sommes impatients de célébrer avec vous. Préparez-vous d'ores et déjà à une fête grandiose. Soyez des nôtres avec joie ! 🥂✨</p>
+            <div class="dates">
+                <ng-container *ngFor="let date of dates; let i=index">
+                    <div class="date-bloc" data-aos="fade-right" [attr.data-aos-delay]="200*(i+1)">
+                        <span class="date"> {{date.date}} </span>
+                        <span class="day"> {{date.day}} </span>
+                        <span class="label"> {{date.label}} </span>
+                    </div>
+                </ng-container>
+            </div>
+        </div>
+        <!-- <img src="../../../../../../../assets/img/home/samuel_et_nadia_no_bg.jpeg" alt="Samuel et Nadia">  --> 
+        <img src="../../../../../../../assets/img/home/WhatsApp_Image_2024-01-08_at_23.46.02-removebg-preview.png" alt="Samuel et Nadia">    
+    </div>
+</div>

@@ -20,7 +20,7 @@ export class PageContactComponent implements OnInit {
     this.contactWays = [
       {
         icon : "pi pi-phone",
-        value : "07 83 18 91 71"
+        value : "06 12 73 92 46"
       },
       {
         icon : "pi pi-envelope",

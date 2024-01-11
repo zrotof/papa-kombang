@@ -56,13 +56,13 @@ export class PageReligiousMarriageComponent implements OnInit {
     this.ceremoniesList = [
       {
         header : "Mariage réligieux",
-        hour : "14h30 - 15h30",
+        hour : "13h00 - 14h30",
         address : "20 Château d'Apigné route du, 35650 Le Rheu",
         explanations : "Notre mariage religieux aura lieu dans le magnifique jardin du Château d'Apignée, marquant ainsi la fin de la journée par la bénédiction nuptiale. Un cadre idyllique pour sceller notre amour dans la grâce et la beauté. Nous sommes impatients de partager ce moment unique avec vous."
       },
       {
         header : "Soirée",
-        hour : "20h00 - 03h00",
+        hour : "19h00 - 04h00",
         address : "20 Château d'Apigné route du, 35650 Le Rheu",
         explanations : "Notre mariage religieux aura lieu dans le magnifique jardin du Château d'Apignée, marquant ainsi la fin de la journée par la bénédiction nuptiale. Un cadre idyllique pour sceller notre amour dans la grâce et la beauté. Nous sommes impatients de partager ce moment unique avec vous, entourés de l'éclat du thème émeraude et or qui illuminera cette journée."
       }

@@ -45,7 +45,9 @@ export class ReligiousFormComponent implements OnInit {
 
   isWeddingConfirmationSubmittedAndNotErrorOnClientSide = false;
 
-  displayModal = false;
+  displayMailResponseModal = false;
+  success !: Boolean;
+  responseMailModalObject : any;
 
   constructor( 
     private route : Router,
@@ -167,73 +169,33 @@ export class ReligiousFormComponent implements OnInit {
     }
 
     this.isWeddingConfirmationSubmittedAndNotErrorOnClientSide = true;
-    this.displayModal = true;
+    this.displayMailResponseModal = true;
 
     this.weddingConfirmationService.confirmReligiousWedding(guestData).subscribe({
-      next : () => {
+      next : (result : any) => {
 
-        /*
+        this.responseMailModalObject = result.message
 
-        this.success = true;
-        this.responseMailModalObject = {
-
-          header : "Message transmis",
-          icon : faCircleCheck,
-          texts: [
-            {
-              text : "Bonjour,"
-            },
-            {
-              text : "Nous avons bien reçu votre message, nous reviendrons vers vous très prochainement."
-            },
-            {
-              text : "Merci!"
-            }
-          ]
-        };
-
-        this.isContactFormSubmitted = false;
+        this.isFormSubmitted = false;
 
         this.isWeddingConfirmationSubmittedAndNotErrorOnClientSide = false
         this.civilWeddingBookingForm.reset();
 
-        */
       },
       error : () => {
-        
-        /*
-        this.displayDialogModal = true;
-        this.success = false;
-        this.responseMailModalObject = {
-          header : "Erreur lors de l'envoie",
-          icon : faTriangleExclamation,
-          texts: [
-            {
-              text : "Bonjour,"
-            },
-            {
-              text : "Nous tenons à vous présenter nos excuses car nous rencontrons un problème technique qui empêche la soumisison de votre formulaire. Nous sommes conscients de l'importance de votre demande et nous travaillons activement pour résoudre ce problème technique dans les plus brefs délais."
-            },
-            {
-              text : "Vous pouvez re-essayer de soumettre le formulaire ou nous contacter directement par téléphone au (+237) XXXXXXX ou par email à l'adresse contact_pub@foryoumedia-africa.com."
-            },
-            {
-              text : "Merci!"
-            }
-          ]
-        };
-                */
+        this.isFormSubmitted = false;
+        this.displayMailResponseModal = true;
+        this.isWeddingConfirmationSubmittedAndNotErrorOnClientSide = false;
+        this.responseMailModalObject = "Erreur lors de l'envois. Vous pouvez re-essayer plus tard et si cela persite contactez nous directement via la page de contact"
+      },
+      
 
-      }
-
-    }
-    )
-
+    })
   }
 
   onNavigate()  : void {
 
-    this.displayModal = false;
+    this.displayMailResponseModal = false;
 
     const guestObject = {
       firstname: this.civilWeddingBookingForm.get('firstname')?.value,

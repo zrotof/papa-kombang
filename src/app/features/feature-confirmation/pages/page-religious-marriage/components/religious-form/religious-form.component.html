@@ -109,21 +109,17 @@
     </div>
 </div>
 
-<p-dialog maskStyleClass="mask" styleClass="confirmDialog" header="Header" [modal]="true" [draggable]="false" [resizable]="false" [(visible)]="displayModal" [style]="{ width: '50vw' }">
+<p-dialog maskStyleClass="mask" styleClass="confirmDialog" header="Header" [modal]="true" [draggable]="false" [breakpoints]="{ '425px': '90vw' }" [resizable]="false" [(visible)]="displayMailResponseModal" [style]="{ width: '50vw' }">
     <ng-template pTemplate="header">
-        <span class="text-xl font-bold">Présence pour mariage civil confirmée</span>
+        <span class="text-xl font-bold">Mariage Réligieux</span>
     </ng-template>
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
+    <p>{{responseMailModalObject}}</p>
     <ng-template pTemplate="footer">
         <p-button 
-            routerLink="/confirmation-mariage-religieux" 
             class="confirm-other"
             (click)="onNavigate()"
             >
-            Réserver pour le mariage réligieux
+            Réserver pour le mariage civil
         </p-button>
     </ng-template>
 </p-dialog>

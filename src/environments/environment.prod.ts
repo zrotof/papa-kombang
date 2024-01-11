@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  apiBaseUrl: "https://nadia-et-samuel.fr/v1/"
+  apiBaseUrl: "https://api.nadia-et-samuel.fr/v1/"
 };

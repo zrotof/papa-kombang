@@ -295,14 +295,12 @@ export class CivilFormComponent implements OnInit {
         
         this.isWeddingConfirmationSubmittedAndNotErrorOnClientSide = false
         this.civilWeddingBookingForm.reset();
-
       },
       error : () => {
         this.displayMailResponseModal = true;
         this.success = false;
         this.responseMailModalObject = "Erreur lors de l'envois. Vous pouvez re-essayer plus tard et si cela persite contactez nous directement via la page de contact";
         this.isWeddingConfirmationSubmittedAndNotErrorOnClientSide = false
-
       }
     }
     )

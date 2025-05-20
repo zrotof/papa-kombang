@@ -21,15 +21,20 @@ export class HeroBannerComponent implements OnInit {
   initDates() : void {
     this.dates = [
       {
-        date: "Vendredi",
-        day: "24/05/2024",
-        label: "MARIAGE CIVIL"
+        date: "Jeudi",
+        day: "05/05/2025",
+        label: "levée de corps"
       },
       {
+        date: "Vendredi",
+        day: "06/05/2025",
+        label: "Veillée"
+      },
+            {
         date: "Samedi",
-        day: "25/05/2024",
-        label: "MARIAGE RÉLIGIEUX"
-      }
+        day: "07/05/2025",
+        label: "Inhumation"
+      },
     ]
   }
 

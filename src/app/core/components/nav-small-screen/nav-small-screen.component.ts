@@ -34,20 +34,20 @@ export class NavSmallScreenComponent implements OnInit {
         url : ""
       },
       {
-        label: "Accommodations",
-        url:"/accommodations"
+        label: "Obsèques",
+        url:"/obseques"
       },
       {
         label: "Confirmation Mariage Civil",
-        url:"/confirmation-mariage-civil"
+        url:"/temoignages"
       },
       {
         label: "Confirmation Mariage Réligieux",
-        url:"/confirmation-mariage-religieux"
+        url:"/galeries"
       },
       {
         label: "Vos Cadeaux",
-        url : "/vos-cadeaux"
+        url : "/dons"
       },
       {
         label: "Nous Contacter",

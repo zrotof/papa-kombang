@@ -28,7 +28,7 @@ export class PageGiftComponent implements OnInit {
 
   getHebannerData(): void {
     this.heroBannerData = {
-      image: "../../../../../../../../assets/img/home/hero-bg.png",
+      image: "../../../../../../../../assets/img/home/hero-bg.jpeg",
       title: "Vos Cadeaux"
     }
   }

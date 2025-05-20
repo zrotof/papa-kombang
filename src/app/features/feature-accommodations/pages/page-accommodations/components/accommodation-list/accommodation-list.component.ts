@@ -19,5 +19,5 @@ import { AccommodationItemComponent } from '../accommodation-item/accommodation-
 })
 
 export class AccommodationListComponent {
-  @Input() accommodations !: Accommodation[];
+  @Input() obseques !: Accommodation[];
 }

@@ -8,6 +8,7 @@ import { CeremonyDetail } from 'src/app/core/models/ceremony-detail';
 import { PageIntro } from 'src/app/core/models/page-intro';
 import { WeddingCeremonyDetailsComponent } from 'src/app/shared/components/wedding-ceremony-details/wedding-ceremony-details.component';
 import { PageIntroComponent } from 'src/app/shared/components/page-intro/page-intro.component';
+import { AboutHomeComponent } from 'src/app/features/feature-home/pages/page-home/components/about-home/about-home.component';
 
 @Component({
   selector: 'app-page-civil-marriage',
@@ -19,7 +20,8 @@ import { PageIntroComponent } from 'src/app/shared/components/page-intro/page-in
     SecondaryHeroComponent,
     PageIntroComponent,
     WeddingCeremonyDetailsComponent,
-    CivilFormComponent
+    CivilFormComponent,
+    AboutHomeComponent
   ],
   templateUrl: './page-civil-marriage.component.html',
   styleUrls: ['./page-civil-marriage.component.scss']

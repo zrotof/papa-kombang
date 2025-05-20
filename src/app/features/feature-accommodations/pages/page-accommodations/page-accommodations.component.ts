@@ -8,7 +8,7 @@ import { NgFor } from '@angular/common';
 import { PageIntro } from 'src/app/core/models/page-intro';
 
 @Component({
-  selector: 'app-page-accommodations',
+  selector: 'app-page-Obsèques',
   standalone: true,
   imports: [
     NgFor,
@@ -19,21 +19,21 @@ import { PageIntro } from 'src/app/core/models/page-intro';
   templateUrl: './page-accommodations.component.html',
   styleUrls: ['./page-accommodations.component.scss']
 })
-export class PageAccommodationsComponent implements OnInit {
+export class PageObsèquesComponent implements OnInit {
 
   heroBannerData !: SecondaryHero ;
   pageIntro !: PageIntro;
-  accommodations !: Accommodation[] ;
+  obseques !: Accommodation[] ;
 
   ngOnInit(): void {
     this.getHebannerData();
     this.getPageintro();
-    this.getAccommodations();
+    this.getObsèques();
 }
 
   getHebannerData(): void {
     this.heroBannerData = {
-      image: "../../../../../../../../assets/img/home/hero-bg.png",
+      image: "../../../../../../../../assets/img/home/hero-bg.jpeg",
       title: "Logements À Rennes"
     }
   }
@@ -47,8 +47,8 @@ export class PageAccommodationsComponent implements OnInit {
     }
   }
 
-  getAccommodations() : void {
-    this.accommodations = [
+  getObsèques() : void {
+    this.obseques = [
       {
         type :"Hôtel 5 ⭐️ ( 2 )",
         list : [

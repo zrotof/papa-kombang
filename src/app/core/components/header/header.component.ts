@@ -57,23 +57,23 @@ export class HeaderComponent implements OnInit {
     this.menus = [
       {
         label: "Accueil",
-        url : ""
+        url : "",
       },
       {
-        label: "Accommodations",
-        url:"/accommodations"
+        label: "Obsèques",
+        url:"/Obsèques",
       },
       {
-        label: "Confirmations",
+        label: "Scène de vie",
         icon: "pi-angle-down",
         items : [
           {
-            label: "Mariage civil",
-            url:"/confirmation-mariage-civil"
+            label: "Temoignages",
+            url:"/Temoignages",
           },
           {
-            label: "Mariage réligieux",
-            url:"/confirmation-mariage-religieux"
+            label: "Galeries",
+            url:"/Galeries",
           }
         ]
       },
@@ -82,8 +82,8 @@ export class HeaderComponent implements OnInit {
         url : "/contact"
       },
       {
-        label: "Cadeaux",
-        url : "/vos-cadeaux",
+        label: "Dons",
+        url : "/dons",
         icon: "pi-gift"
       }
     ]

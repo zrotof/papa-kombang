@@ -1,7 +1,7 @@
 <div class="accommodation-list">
     <div class="content my-container">
         <p-tabView styleClass="custom-tabs" [scrollable]="true">
-            <p-tabPanel *ngFor="let tab of accommodations" [header]="tab.type">
+            <p-tabPanel *ngFor="let tab of obseques" [header]="tab.type">
                 <div class="accommodations">
                     <ng-container *ngFor="let accommodation of tab.list">
                         <app-accommodation-item [accommodation]="accommodation"></app-accommodation-item>

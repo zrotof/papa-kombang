@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     margin-bottom: 7rem;
-    background: url("../.././../../../../../assets/img/home/bg-divider.png");
+    background: url("../.././../../../../../assets/img/home/bg-divider.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center right;
@@ -20,13 +20,12 @@
             .text{
                 max-width: 800px;
                 width: 100%;
-                font-size: 15px;
+                font-size: 20px;
                 line-height: 23px;
                 margin-bottom: 25px;
             }
 
             .verset{
-                color: var(--sn-gold-color);
                 font-weight: bold;
                 font-size: 15px;
             }

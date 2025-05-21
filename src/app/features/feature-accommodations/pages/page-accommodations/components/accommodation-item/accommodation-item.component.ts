@@ -10,5 +10,5 @@ import { Hostel } from 'src/app/core/models/accommodation';
   styleUrls: ['./accommodation-item.component.scss']
 })
 export class AccommodationItemComponent {
-  @Input() accommodation !: Hostel;
+  @Input() accommodation !: any;
 }

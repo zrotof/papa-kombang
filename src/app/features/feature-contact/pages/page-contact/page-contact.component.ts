@@ -19,12 +19,8 @@ export class PageContactComponent implements OnInit {
   initContactWays() : void {
     this.contactWays = [
       {
-        icon : "pi pi-phone",
-        value : "06 12 73 92 46"
-      },
-      {
         icon : "pi pi-envelope",
-        value : "messages@nadia-et-samuel.fr"
+        value : "contact@kombang-zanbwalla-eloa.com"
       }
     ]
   }

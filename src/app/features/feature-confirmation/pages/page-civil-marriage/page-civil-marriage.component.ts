@@ -40,34 +40,20 @@ export class PageCivilMarriageComponent implements OnInit {
 
   getHebannerData(): void {
     this.heroBannerData = {
-      image: "../../../../../../../../assets/img/home/hero-bg.png",
-      title: "Confirmation : Mariage Civil"
+      image: "../../../../../../../../assets/img/home/hero-bg.jpeg",
+      title: "Temoignages et anecdotes"
     }
   }
 
   getPageintro() : void {
     this.pageIntro = {
-      header : "Déroulement de la journée",
+      header : "💬 Page Témoignages – En mémoire de Papa",
       paragraphs : [
-        "Notre week-end magique débutera le vendredi 24 mai par une cérémonie civile qui scellera notre union, suivie d'une soirée festive. Rejoignez-nous pour ce moment spécial, où l'amour et la célébration seront à l'honneur. La journée du vendredi marquera le commencement de notre aventure, et nous sommes impatients de partager ces moments mémorables avec vous."
+        "Cette page est un espace de souvenirs, d’amour et de reconnaissance. Chaque témoignage ici déposé est une trace vivante de ce que Papa a semé dans nos vies : des sourires, des paroles, des gestes, une présence. Vous y trouverez les mots de ceux qui l’ont connu, aimé, côtoyé chaque message accompagné d’une photo, pour que sa mémoire reste pleine de visages, de voix et de chaleur humaine 🕊️. 👉 Un formulaire simple est également disponible pour permettre à chacun de partager librement un mot, un souvenir, une prière. Parce que chaque lien compte. Chaque mot est précieux."
       ]
     }
   }
 
   getWeddingCeremonyDetails() : void {
-    this.ceremoniesList = [
-      {
-        header : "Mariage à la Mairie",
-        hour : "14h15 - 14h30",
-        address : "Pl. de la Mairie, 35000 Rennes",
-        explanations : "Le mariage à la mairie débutera à 14h00 précises à la mairie de Rennes. Nous serions ravis de vous avoir à nos côtés pour partager ce moment clé qui lancera notre week-end de célébration."
-      },
-      {
-        header : "Vin d'honneur",
-        hour : "18h00 - 06h00",
-        address : "4 All. Georges Palante, 35000 Rennes",
-        explanations : "La petite soirée traditionnelle débutera après la cérémonie à la mairie. Elle sera imprégnée d'un thème traditionnel, et nous vous encourageons à revêtir un pagne choisi par l'une des familles et à arborer votre meilleure tenue."
-      }
-    ]
   }
 }

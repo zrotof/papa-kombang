@@ -61,7 +61,7 @@ export class HeaderComponent implements OnInit {
       },
       {
         label: "Obsèques",
-        url:"/Obsèques",
+        url:"/obseques",
       },
       {
         label: "Scène de vie",
@@ -69,11 +69,11 @@ export class HeaderComponent implements OnInit {
         items : [
           {
             label: "Temoignages",
-            url:"/Temoignages",
+            url:"/temoignages",
           },
           {
             label: "Galeries",
-            url:"/Galeries",
+            url:"/galeries",
           }
         ]
       },

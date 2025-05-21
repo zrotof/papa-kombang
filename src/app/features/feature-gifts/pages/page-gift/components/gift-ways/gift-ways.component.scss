@@ -25,16 +25,24 @@
             }
 
             p{
-                color: black;
+                padding: 7px 10px;
+                background-color: var(--sn-gold-color);
+                color: white;
+                transition: all 0.2s ease-in-out;
+                border-radius: 5px;
                 font-size: 14px;
-                padding: 7px 10px
+
+                &:hover{
+                    background-color: var(--sn-green-color);
+                    color: white;
+                }
             }
 
             a{
                 text-decoration: none;
                 padding: 7px 10px;
                 background-color: var(--sn-gold-color);
-                color: black;
+                color: white;
                 transition: all 0.2s ease-in-out;
                 border-radius: 5px;
                 font-size: 14px;

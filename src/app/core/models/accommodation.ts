@@ -7,8 +7,8 @@ export interface Hostel {
     name : string,
     image : string,
     descriptions : Description[],
-    distances : Distance[],
-    price : number,
+    distances? : Distance[],
+    price? : number,
     link : string
 }
 
@@ -18,6 +18,6 @@ export interface Description {
 
 export interface Distance {
     label : string,
-    distance : number
+    distance : any;
 }
 

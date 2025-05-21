@@ -1,29 +1,30 @@
-.about-home{
+.about-home {
     display: flex;
     justify-content: center;
     margin-bottom: 7rem;
 
-    .content{
+    .content {
         display: flex;
         flex-direction: column;
         width: 100%;
 
-        .title{
+        .title {
             text-align: center;
         }
 
-        .bride-groom{
+        .bride-groom {
             display: flex;
             justify-content: space-around;
             gap: 4rem;
 
-            .married{
+            .married {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 flex: 1;
+                margin-top: 150px;
 
-                img{
+                img {
                     width: 400px;
                     height: 300px;
                     margin-bottom: 30px;
@@ -32,136 +33,140 @@
                     flex: none;
                 }
 
-                .texts-bloc{
+                .texts-bloc {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
 
-                    .subtitle{
+                    .subtitle {
                         border-radius: 50px;
                         padding: 7px 20px;
                         border: 2px solid black;
                         margin-bottom: 20px;
-    
-                        i{
+
+                        i {
                             margin-right: 10px;
-                            animation: updown .9s cubic-bezier(.075,.82,.665,1) infinite alternate;
+                            animation: updown .9s cubic-bezier(.075, .82, .665, 1) infinite alternate;
                         }
-    
+
                         @keyframes updown {
-                            0%, 100% {
-                              transform: translateY(4px);
+
+                            0%,
+                            100% {
+                                transform: translateY(4px);
                             }
+
                             50% {
-                              transform: translateY(-4px); /* Adjust the distance as needed */
+                                transform: translateY(-4px);
+                                /* Adjust the distance as needed */
                             }
-                          }
+                        }
                     }
-    
-                    .name{
+
+                    .name {
                         font-size: 1.7rem;
                         font-weight: bold;
                         margin-bottom: 10px;
                     }
-    
-                    .speech{
+
+                    .speech {
                         font-size: 15px;
                         line-height: 21px;
                         text-align: center;
 
-                        p{
+                        p {
                             margin-bottom: 5px;
                         }
                     }
                 }
             }
 
-            .groom{
-                img{
+            .groom {
+                img {
                     border-radius: 0 100px 0 100px;
-                    object-position: top center;
+                    object-position: center;
                 }
 
-                .subtitle{
+                .subtitle {
 
-                    i{
+                    i {
                         margin-right: 0;
                         margin-left: 10px;
                     }
                 }
             }
 
-            .bride{
-                img{
+            .bride {
+                img {
                     border-radius: 100px 0 100px 0;
-                    object-position: left -160px;
+                    object-position: top center;
                 }
             }
         }
     }
 }
 
-@media all and (max-width: 1024px){
-    .about-home{
-        .content{
-            .bride-groom{
+@media all and (max-width: 1024px) {
+    .about-home {
+        .content {
+            .bride-groom {
                 flex-direction: column;
 
-                .married{
+                .married {
                     flex-direction: row;
                     align-items: flex-start;
-    
-                    img{
+
+                    img {
                         width: 350px;
                         height: 275px;
                         margin-bottom: 0;
                     }
-    
-                    .texts-bloc{
+
+                    .texts-bloc {
                         align-items: flex-start;
                         padding: 0 0 0 2.5rem;
 
-                        .subtitle{
+                        .subtitle {
                             order: 2;
                             margin-bottom: 10px;
 
-                            i{
+                            i {
                                 display: none;
                             }
                         }
-        
-                        .name{
+
+                        .name {
                             margin-bottom: 15px;
                             order: 1;
                             font-size: 1.5rem;
                         }
-        
-                        .speech{
+
+                        .speech {
                             order: 3;
                             text-align: left;
                         }
                     }
                 }
 
-                .bride{
+                .bride {
 
-                    img{
+                    img {
                         border-radius: 80px 0 80px 0;
                     }
                 }
 
-                .groom{
+                .groom {
                     flex-direction: row-reverse;
 
-                    img{
+                    img {
                         border-radius: 0 80px 0 80px;
                     }
 
-                    .texts-bloc{
+                    .texts-bloc {
                         padding: 0 2.5rem 0 0;
                         align-items: flex-end;
-        
-                        .speech{
+
+                        .speech {
                             text-align: right;
                         }
                     }
@@ -171,23 +176,23 @@
     }
 }
 
-@media all and (max-width: 768px){
-    .about-home{
-        .content{
-            .bride-groom{
-                .married{
-                    img{
+@media all and (max-width: 768px) {
+    .about-home {
+        .content {
+            .bride-groom {
+                .married {
+                    img {
                         width: 270px;
                         height: 225px;
                     }
-    
-                    .texts-bloc{
+
+                    .texts-bloc {
                         padding: 0 0 0 2rem;
                     }
                 }
 
-                .groom{
-                    .texts-bloc{
+                .groom {
+                    .texts-bloc {
                         padding: 0 2rem 0 0;
                     }
                 }
@@ -196,40 +201,41 @@
     }
 }
 
-@media all and (max-width: 650px){
-    .about-home{
-        .content{
-            .bride-groom{
+@media all and (max-width: 650px) {
+    .about-home {
+        .content {
+            .bride-groom {
                 flex-direction: column;
 
-                .married{
+                .married {
                     flex-direction: column !important;
                     align-items: center;
-                    
-                    img{
+                    margin-top: 50px;
+
+                    img {
                         max-width: 300px;
                         width: 100%;
                         height: 225px;
                     }
-    
-                    .texts-bloc{
-                        align-items: center !important;
-                        padding: 1.5rem 0 0 0 !important ;
 
-                        .subtitle{
+                    .texts-bloc {
+                        align-items: center !important;
+                        padding: 1.5rem 0 0 0 !important;
+
+                        .subtitle {
                             order: 1;
-                            
-                            i{
+
+                            i {
                                 display: inline-block;
                             }
                         }
-        
-                        .name{
+
+                        .name {
                             margin-bottom: 10px;
                             order: 2;
                         }
 
-                        .speech{
+                        .speech {
                             order: 3;
                             text-align: center !important;
                         }

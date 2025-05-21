@@ -1,7 +1,7 @@
 .footer{
     background-image: url("../../../../assets/img/home/hero-bg.jpeg");
     padding: 3rem 0;
-    color: white;
+    color: black;
     display: flex;
     justify-content: center;
     .content{
@@ -15,6 +15,8 @@
             p{
                 font-size: 14px;
                 text-align: center;
+                color: white;
+                font-weight: 600;
             }
         }
     }

@@ -38,15 +38,15 @@ export class NavSmallScreenComponent implements OnInit {
         url:"/obseques"
       },
       {
-        label: "Confirmation Mariage Civil",
+        label: "Témoignages",
         url:"/temoignages"
       },
       {
-        label: "Confirmation Mariage Réligieux",
+        label: "Galeries",
         url:"/galeries"
       },
       {
-        label: "Vos Cadeaux",
+        label: "Vos Dons",
         url : "/dons"
       },
       {

@@ -1,4 +1,4 @@
-.hero-banner{
+.hero-banner {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,13 +7,14 @@
     height: 100vh;
     height: 100svh;
 
-    background-image: url("../../../../../../../assets/img/home/papa.jpg");
+    background-image: url("../../../../../../../assets/img/home/hero.webp");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: 0 -35rem;
 
     overflow: hidden;
 
-    .content{
+    .content {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -21,73 +22,72 @@
         width: 100%;
         height: 100%;
 
-        .text-bloc{
+        .text-bloc {
             display: flex;
             flex-direction: column;
-            max-width: 550px;
-            margin-top: 5rem;
+            max-width: 580px;
+            margin-top: 10rem;
 
-            .announce{
+            .announce {
                 color: var(--sn-gold-color);
-                padding: 7px 20px;
-                margin-bottom: 20px;
+                padding: 0.7rem 1.5rem;
+                margin-bottom: 1rem;
                 background-color: var(--sn-gold-color);
                 width: fit-content;
                 color: white;
                 font-weight: bold;
                 font-size: 18px;
+                border-radius: 5px;
             }
 
-            .names{
+            .names {
                 display: flex;
                 align-items: baseline;
+                margin-bottom: 3rem;
 
-                .name{
+                .name {
                     font-family: 'Beau Rivage', cursive;
                     color: white;
-                    font-size: 4rem;
+                    font-size: 4.5rem;
                     line-height: 5rem;
-                }
-    
-                .name-union{
-                    color: var(--sn-gold-color);
-                    font-size: 2rem;
-                    margin: 0 15px 0 25px;
+                    font-weight: 800;
+                    text-shadow: 4px 4px 10px #0b79f7;
                 }
             }
 
-            .text{
+            .text {
                 color: white;
-                font-size: 15px;
-                line-height: 23px;
-                margin-bottom: 20px;
+                font-size: 1.1rem;
+                line-height: 1.8rem;
+                margin-bottom: 5rem;
             }
 
-            .dates{
+            .dates {
                 display: flex;
                 gap: 3rem;
 
-                .date-bloc{
-                    border-left: 3px solid var(--sn-gold-color);
+                .date-bloc {
+                    border-left: 4px solid white;
                     display: flex;
                     flex-direction: column;
-                    padding-left: 15px;
+                    padding-left: 1rem;
 
-                    .date{
+
+                    .date {
                         color: white;
                         font-size: 13px;
                         letter-spacing: 3px;
                         margin-bottom: 7px;
                     }
 
-                    .day{
+                    .day {
                         margin-bottom: 7px;
                         font-size: 1.3rem;
                         color: white;
                         font-weight: bold;
                     }
 
-                    .label{
+                    .label {
                         font-size: 13px;
                         color: white;
                         letter-spacing: 3px;
@@ -95,147 +95,218 @@
                 }
             }
         }
-    
-        img{
-            position: absolute;
-            bottom: 0;
-            width: 850px;
-            right: -130px;
-        }
     }
 }
 
-@media all and (max-width: 1280px){
-    .hero-banner{
-        .content{        
-            img{
+@media all and (max-width: 1280px) {
+    .hero-banner {
+        .content {
+            img {
                 width: 750px;
             }
         }
     }
-    
 }
 
-@media all and (max-width: 1155px){
-    .hero-banner{
-        .content{
-            .text-bloc{
+@media all and (max-width: 1155px) {
+    .hero-banner {
+        .content {
+            .text-bloc {
                 max-width: 460px;
             }
-        
-            img{
+
+            img {
                 width: 700px;
             }
         }
     }
 }
 
-@media all and (max-width: 950px){
-    .hero-banner{
-        height: fit-content;
+@media all and (max-width: 1024px) {
+    .hero-banner {
+        background-position: 0 -22rem;
 
-        .content{
-            flex-direction: column;
-            gap: 5rem;
+        .content {
+            .text-bloc {
+                margin-top: 10rem;
 
-            .text-bloc{
-                max-width: 800px;
-                align-items: center;
-                margin-top: 12rem;
-
-                .text{
-                    text-align: center;
+                .announce {
+                    padding: 0.5rem 1rem;
+                    margin-bottom: 1rem;
+                    font-weight: 700;
+                    font-size: 1rem;
                 }
-            }
-        
-            img{
-                position: relative;
-                width: 700px;
-                right: 0;
-            }
-        }
-    }
-}
 
-@media all and (max-width: 768px){
-    .hero-banner{
-        .content{
-            .text-bloc{
-                margin-top: 12rem;
-            }
-
-            img{
-                width: 100%;
-            }
-        }
-    }
-}
-
-@media all and (max-width: 480px){
-    .hero-banner{
-        .content{
-            gap: 0;
-            flex-direction: column-reverse;
-
-            .text-bloc{
-                margin-top: 0;
-                margin-bottom: 3rem;
-
-                .announce{
-                    padding: 8px 15px;
-                    margin-bottom: 15px;
-                    font-size: 15px;
-                    width: 100%;
-                    text-align: center;
-                    border-radius: 3px;
-                }
-    
-                .names{
+                .names {
                     display: flex;
                     align-items: baseline;
-    
-                    .name{
-                        font-size: 2.5rem;
-                    }
-        
-                    .name-union{
-                        margin: 0 15px 0 23px;
-                    }
-                }
-    
-                .text{
-                    font-size: 15px;
-                    line-height: 21px;
-                    margin-bottom: 25px;
-                }
-    
-                .dates{
-                    flex-direction: column;
-                    flex-wrap: wrap;
-                    justify-content: center;
-                    gap: 2rem;
+                    margin-bottom: 1rem;
 
-                    .date-bloc{
-                        border-left: unset;
-                        padding-left: 0;
-                        align-items: center;
-    
-                        .day{
-                            font-size: 1.2rem;
-                            color: var(--sn-gold-color);
+                    .name {
+                        font-family: 'Beau Rivage', cursive;
+                        color: white;
+                        font-size: 3.5rem;
+                        line-height: 5rem;
+                    }
+                }
+
+                .text {
+                    font-size: 1rem;
+                    line-height: 1.6rem;
+                    margin-bottom: 3rem;
+                }
+
+                .dates {
+                    display: flex;
+                    gap: 3rem;
+
+                    .date-bloc {
+                        border-left: 4px solid white;
+
+                        .date {
+                            color: white;
+                            font-size: 13px;
+                            letter-spacing: 3px;
+                            margin-bottom: 7px;
                         }
-    
-                        .label{
-                            letter-spacing: 2px;
+
+                        .day {
+                            margin-bottom: 7px;
+                            font-size: 1.3rem;
+                            color: white;
+                            font-weight: bold;
+                        }
+
+                        .label {
+                            font-size: 13px;
+                            color: white;
+                            letter-spacing: 3px;
                         }
                     }
                 }
             }
+        }
+    }
+}
 
-            img{
-                width: 100%;
-                margin-top: 8rem;
-                right: -12px;
+@media all and (max-width: 950px) {
+    .hero-banner {
+        background-position: 0 -15rem;
+
+        .content {
+            flex-direction: column;
+            gap: 5rem;
+            height: 100vh;
+            padding-bottom: 2rem;
+
+            .text-bloc {
+                max-width: 800px;
+                align-items: center;
+                margin-top: 0;
+                height: 100%;
+
+                justify-content: flex-end;
+
+                .names {
+                    margin-bottom: 1rem;
+
+                    .name {
+                        text-align: center;
+                        color: white;
+                        font-size: 2.5rem;
+                        line-height: 3.5rem;
+                        font-weight: 800;
+                        text-shadow: 4px 4px 10px #0b79f7;
+                    }
+                }
+
+                .text {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 768px) {
+    .hero-banner {
+        background-position: center;
+
+        .content {
+            height: 100%;
+
+            .text-bloc {
+
+                .dates {
+                    gap: 1rem;
+                    justify-content: space-between;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+
+@media all and (max-width: 570px) {
+    .hero-banner {
+        .content {
+            height: 100%;
+
+            .text-bloc {
+
+                .announce {
+                    padding: 0.5rem 1rem;
+                    margin-bottom: 1rem;
+                    font-size: 0.92rem;
+                }
+
+                .names {
+                    .name {
+                        font-size: 2rem;
+                        line-height: 3rem;
+                        text-shadow: 4px 4px 10px #0b79f7;
+                    }
+                }
+
+                .text {
+                    font-size: 0.95rem;
+                    line-height: 1.2rem;
+                    margin-bottom: 1.5rem;
+                }
+
+                .dates {
+                    gap: 1rem;
+                    justify-content: space-between;
+                    width: 100%;
+
+                    .date-bloc {
+                        border: none;
+                        padding: 0;
+                        justify-content: center;
+                        align-items: center;
+
+                        .date {
+                            color: white;
+                            font-size: 13px;
+                            letter-spacing: 0;
+                            margin-bottom: 5px;
+                        }
+
+                        .day {
+                            margin-bottom: 5px;
+                            font-size: 1.1rem;
+                            color: white;
+                            font-weight: bold;
+                        }
+
+                        .label {
+                            font-size: 13px;
+                            color: white;
+                            letter-spacing: 0;
+                        }
+                    }
+                }
             }
         }
     }

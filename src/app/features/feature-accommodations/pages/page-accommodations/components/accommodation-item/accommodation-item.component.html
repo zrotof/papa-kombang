@@ -1,29 +1,21 @@
 <div class="accommodation-item">
     <img src={{accommodation.image}}>
     <div class="text-bloc">
-        <h3>{{accommodation.name}}</h3>
+        <h3>🗓️ {{accommodation.name}}</h3>
 
         <div class="descriptions">
             <ng-container *ngFor="let description of accommodation.descriptions">
-                    <p> {{description.text}} </p>
+                <p> {{description.text}} </p>
             </ng-container>
         </div>
-
-        <div class="distances">
-            <ng-container *ngFor="let distance of accommodation.distances">
-                <div class="distance">
-                    <i class="pi pi-map-marker"></i>
-                    <p> {{distance.label}} </p>
-                    <p> {{distance.distance}} KM</p>
-                </div>
+        <ul>
+            <b>Temps forts :</b>
+            <ng-container *ngFor="let list of accommodation.list">
+                <li> {{list}} </li>
             </ng-container>
-        </div>
+        </ul>
 
-        <div class="price">
-            <p> à partir de </p>
-            <p> <b>{{accommodation.price}} €</b> / nuit </p>
-        </div>
-
-        <a href={{accommodation.link}} target="_blank"> Cliquez ici pour voir les offres sur le site web de l'hôtel </a>
+        <div class="details"></div><a href={{accommodation.link}} target="_blank">🗺️ Cliquez ici pour voir la localisation </a>
     </div>
 </div>
+ <div><div class="image-title">📍 Localisation</div><img class="image" src="../../../../../../../assets/img/home/localisation.jpeg" alt="localisation"></div>

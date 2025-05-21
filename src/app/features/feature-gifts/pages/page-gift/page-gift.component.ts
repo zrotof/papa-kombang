@@ -29,7 +29,7 @@ export class PageGiftComponent implements OnInit {
   getHebannerData(): void {
     this.heroBannerData = {
       image: "../../../../../../../../assets/img/home/hero-bg.jpeg",
-      title: "Vos Cadeaux"
+      title: "Vos Dons"
     }
   }
 
@@ -43,7 +43,7 @@ export class PageGiftComponent implements OnInit {
       {
         type : "with-no-link",
         logo : "../../../../../../../../assets/img/gifts/mobile-money.jpeg",
-        number : "(+237) 6 77 08 05 03"
+        number : "(+237) 6 50 34 36 39"
       },
       {
         type : "with-link",
@@ -54,7 +54,7 @@ export class PageGiftComponent implements OnInit {
       {
         type : "with-link",
         logo : "../../../../../../../../assets/img/gifts/paypal.png",
-        link : "https://www.paypal.me/samynady",
+        link : "https://www.paypal.me/nadykombang1",
         linkName : "Dons Par Paypal"
       }
     ]

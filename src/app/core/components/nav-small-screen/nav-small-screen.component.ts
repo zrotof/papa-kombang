@@ -30,27 +30,27 @@ export class NavSmallScreenComponent implements OnInit {
   initMenuOnSmallScreen() : void {
     this.menus = [
       {
-        label: "Accueil",
+        label: "Accueil 🏠",
         url : ""
       },
       {
-        label: "Obsèques",
+        label: "Obsèques 🕊️",
         url:"/obseques"
       },
       {
-        label: "Témoignages",
+        label: "Témoignages 💬",
         url:"/temoignages"
       },
       {
-        label: "Galeries",
+        label: "Galeries 🖼️",
         url:"/galeries"
       },
       {
-        label: "Vos Dons",
+        label: "Vous voulez participer ? 🤗",
         url : "/dons"
       },
       {
-        label: "Nous Contacter",
+        label: "Contactez-nous 😊✉️",
         url : "/contact"
       }
     ]

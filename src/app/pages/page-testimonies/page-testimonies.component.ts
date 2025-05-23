@@ -158,6 +158,14 @@ export class PageTestimoniesComponent {
         "..."
       ]
     },
+        {
+      image: "../../../../../../../assets/img/home/joyce.jpeg",
+      link: "Une amie d'enfance de Nadia",
+      name: "Joyce",
+      paragraphes: [
+        "Mon témoignage est drôle mais des souvenirs y en a surtout dans sa maison à la fin des cours Si ce n’était pas les fêtes improvisées c’était les discussions de nourriture et quand il venait nous trouver il regardait seulement ( en mode les enfants si ne sont pas normal) repose en paix papa et que le bon Dieu t’accueille dans son royaume ❤️🙏🏻"
+      ]
+    },
     {
       image: "../../../../../../../assets/img/home/you.png",
       link: "Et toi ?",

@@ -82,7 +82,7 @@ export class HeaderComponent implements OnInit {
         url : "/contact"
       },
       {
-        label: "Dons",
+        label: "Vous voulez participer?",
         url : "/dons",
         icon: "pi-gift"
       }

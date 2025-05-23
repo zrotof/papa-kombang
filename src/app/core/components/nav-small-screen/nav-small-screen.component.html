@@ -1,16 +1,16 @@
 <div class="navigation-small-screen">
 
     <ul>
-        <ng-container *ngFor="let menu of menus">
+        <ng-container *ngFor="let menu of menus; let i=index">
             <li>
-                <a data-aos="fade-up" data-aos-offset="0" (click)=" onNavigationClicked()" routerLinkActive="active-link"
+                <a (click)=" onNavigationClicked()" routerLinkActive="active-link"
                     [routerLinkActiveOptions]="{exact: true}" routerLink={{menu.url}}>
                     {{menu.label}}
                 </a>
             </li>
         </ng-container>
         <li>
-            <a data-aos="fade-up" data-aos-offset="0"
+            <a
                 href="https://drive.google.com/file/d/1Zp34Qrp8iEy358JxZ1jDBK_Nq-R40A8w/view?usp=drivesdk"
                 target="_blank">
                 Télécharger le programme

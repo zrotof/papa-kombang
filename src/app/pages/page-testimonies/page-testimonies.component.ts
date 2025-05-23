@@ -143,7 +143,7 @@ export class PageTestimoniesComponent {
       ]
     },
     {
-      image: "../../../../../../../assets/img/home/maty.jpeg",
+      image: "../../../../../../../assets/img/home/maty.jpg",
       link: "Le 2e Fils",
       name: "Mathy",
       paragraphes: [

@@ -92,12 +92,12 @@
 }
 
 @media all and (max-width: 1024px) {
-    .about-home {
+    .testimonies {
         .content {
-            .bride-groom {
-                flex-direction: column;
+            ul {
+                grid-template-columns: repeat(1, 1fr);
 
-                .married {
+                li {
                     flex-direction: row;
                     align-items: flex-start;
 
@@ -132,41 +132,17 @@
                         }
                     }
                 }
-
-                .bride {
-
-                    img {
-                        border-radius: 80px 0 80px 0;
-                    }
-                }
-
-                .groom {
-                    flex-direction: row-reverse;
-
-                    img {
-                        border-radius: 0 80px 0 80px;
-                    }
-
-                    .texts-bloc {
-                        padding: 0 2.5rem 0 0;
-                        align-items: flex-end;
-
-                        .speech {
-                            text-align: right;
-                        }
-                    }
-                }
             }
         }
     }
 }
 
 @media all and (max-width: 768px) {
-    .about-home {
+    .testimonies {
         .content {
-            .bride-groom {
-                .married {
-                    img {
+            ul {
+                li {
+                    .image-wrapper {
                         width: 270px;
                         height: 225px;
                     }
@@ -175,29 +151,23 @@
                         padding: 0 0 0 2rem;
                     }
                 }
-
-                .groom {
-                    .texts-bloc {
-                        padding: 0 2rem 0 0;
-                    }
-                }
             }
         }
     }
 }
 
 @media all and (max-width: 650px) {
-    .about-home {
+    .testimonies{
         .content {
-            .bride-groom {
+            ul {
                 flex-direction: column;
 
-                .married {
+                li {
                     flex-direction: column !important;
                     align-items: center;
                     margin-top: 50px;
 
-                    img {
+                    .image-wrpper {
                         max-width: 300px;
                         width: 100%;
                         height: 225px;

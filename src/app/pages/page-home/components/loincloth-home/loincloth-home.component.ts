@@ -16,7 +16,7 @@ export class LoinclothHomeComponent {
     {
       name: "Le t-shirt",
       image: "../../../../../../../assets/img/home/shirt.jpeg",
-      price: "5000 fcfa"
+      price: "3500 fcfa"
     },
     {
       name: "Le Pagne",
@@ -26,7 +26,7 @@ export class LoinclothHomeComponent {
     {
       name: "Le macaron",
       image: "../../../../../../../assets/img/home/macaron.jpeg",
-      price: "5000 fcfa"
+      price: "500 fcfa"
     }
   ]
 }

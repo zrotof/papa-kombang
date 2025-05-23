@@ -23,17 +23,17 @@ export class HeroBannerComponent implements OnInit {
     this.dates = [
       {
         date: "Jeudi",
-        day: "05/05/2025",
+        day: "05/06/2025",
         label: "Levée de corps"
       },
       {
         date: "Vendredi",
-        day: "06/05/2025",
+        day: "06/06/2025",
         label: "Veillée funèbre"
       },
             {
         date: "Samedi",
-        day: "07/05/2025",
+        day: "07/06/2025",
         label: "Inhumation"
       },
     ]

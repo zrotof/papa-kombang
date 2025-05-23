@@ -1,0 +1,331 @@
+.hero-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    height: 100svh;
+    overflow: hidden;
+
+    img {
+        object-fit: cover;
+        object-position: 0 -35rem;
+        z-index: 1;
+    }
+
+    .content {
+        z-index: 2;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+        .text-bloc {
+            display: flex;
+            flex-direction: column;
+            max-width: 580px;
+            margin-top: 10rem;
+
+            .announce {
+                color: var(--sn-gold-color);
+                padding: 0.7rem 1rem;
+                margin-bottom: 1rem;
+                background-color: var(--sn-gold-color);
+                width: fit-content;
+                color: white;
+                font-weight: 500;
+                font-size: 1rem;
+                border-radius: 100px;
+            }
+
+            .names {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 2rem;
+                color: white;
+                font-size: 3.5rem;
+
+                span {
+                    font-weight: 900;
+                    text-shadow: 4px 4px 10px #0b79f7;
+                }
+            }
+
+            .text {
+                color: white;
+                font-size: 1rem;
+                line-height: 1.6rem;
+                margin-bottom: 5rem;
+            }
+
+            .dates {
+                display: flex;
+                gap: 2rem;
+
+                .date-bloc {
+                    border-left: 3px solid white;
+                    display: flex;
+                    gap: 0.2rem;
+                    flex-direction: column;
+                    padding: 0rem 0rem 0rem 0.5rem;
+                    //background-color: rgba(19, 44, 103, 0.608);
+
+                    .date {
+                        color: white;
+                        font-size: 13px;
+                        letter-spacing: 1px;
+                        margin-bottom: 7px;
+                        font-weight: 600;
+                    }
+
+                    .day {
+                        margin-bottom: 7px;
+                        font-size: 1.3rem;
+                        color: white;
+                        font-weight: bold;
+                    }
+
+                    .label {
+                        font-size: 0.95rem;
+                        color: white;
+                        letter-spacing: 1px;
+                        white-space: nowrap;
+                    }
+                }
+            }
+
+            a {
+                position: absolute;
+                right: 1rem;
+                bottom: 3rem;
+                display: flex;
+                gap: 0.6rem;
+                font-size: 1rem;
+                background-color: rgb(248, 179, 6);
+                color: black;
+                padding: 0.7rem 1.5rem;
+                border-radius: 0.4rem;
+                font-weight: 500;
+                cursor: pointer;
+                text-decoration: none;
+
+                &:hover{
+                    background-color: var(--sn-gold-color);
+                    color: rgb(248, 179, 6);
+                }
+                i {
+                    font-size: 1.1rem;
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 1155px) {
+    .hero-banner {
+        .content {
+            .text-bloc {
+                max-width: 460px;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 1024px) {
+    .hero-banner {
+
+        img {
+            object-position: 0 -22rem;
+        }
+
+        .content {
+            .text-bloc {
+                margin-top: 10rem;
+
+                .announce {
+                    padding: 0.5rem 1rem;
+                    margin-bottom: 1rem;
+                    font-weight: 700;
+                    font-size: 1rem;
+                }
+
+                .names {
+                    display: flex;
+                    align-items: baseline;
+                    margin-bottom: 1rem;
+
+                    .name {
+                        color: white;
+                        font-size: 3.5rem;
+                        line-height: 5rem;
+                    }
+                }
+
+                .text {
+                    font-size: 1rem;
+                    line-height: 1.6rem;
+                    margin-bottom: 3rem;
+                }
+
+                .dates {
+                    display: flex;
+                    gap: 3rem;
+
+                    .date-bloc {
+                        border-left: 4px solid white;
+
+                        .date {
+                            color: white;
+                            font-size: 13px;
+                            letter-spacing: 3px;
+                            margin-bottom: 7px;
+                        }
+
+                        .day {
+                            margin-bottom: 7px;
+                            font-size: 1.3rem;
+                            color: white;
+                            font-weight: bold;
+                        }
+
+                        .label {
+                            font-size: 13px;
+                            color: white;
+                            letter-spacing: 3px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 950px) {
+    .hero-banner {
+
+        img {
+            object-position: 0 -15rem;
+        }
+
+        .content {
+            flex-direction: column;
+            gap: 5rem;
+            height: 100vh;
+            padding-bottom: 2rem;
+
+            .text-bloc {
+                max-width: 800px;
+                align-items: center;
+                margin-top: 0;
+                height: 100%;
+
+                justify-content: flex-end;
+
+                .names {
+                    align-items: center;
+                    margin-bottom: 1rem;
+                    font-size: 2.5rem;
+                    line-height: 3.5rem;
+                }
+
+                .text {
+                    text-align: center;
+                }
+
+                a{
+                    margin-top: 2rem;
+                    position: relative;
+                    right: 0;
+                    bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 768px) {
+    .hero-banner {
+
+        img {
+            object-position: center;
+        }
+
+        .content {
+            height: 100%;
+
+            .text-bloc {
+
+                .dates {
+                    gap: 1rem;
+                    justify-content: space-between;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+
+@media all and (max-width: 570px) {
+    .hero-banner {
+        .content {
+            height: 100%;
+
+            .text-bloc {
+
+                .announce {
+                    padding: 0.5rem 1rem;
+                    margin-bottom: 1rem;
+                    font-size: 0.92rem;
+                }
+
+                .names {
+                    font-size: 2rem;
+                    line-height: 3rem;
+                }
+
+                .text {
+                    font-size: 0.95rem;
+                    line-height: 1.2rem;
+                    margin-bottom: 1.5rem;
+                }
+
+                .dates {
+                    gap: 1rem;
+                    justify-content: space-between;
+                    width: 100%;
+
+                    .date-bloc {
+                        border: none;
+                        padding: 0;
+                        justify-content: center;
+                        align-items: center;
+
+                        .date {
+                            color: white;
+                            font-size: 13px;
+                            letter-spacing: 0;
+                            margin-bottom: 5px;
+                        }
+
+                        .day {
+                            margin-bottom: 5px;
+                            font-size: 1.1rem;
+                            color: white;
+                            font-weight: bold;
+                        }
+
+                        .label {
+                            font-size: 13px;
+                            color: white;
+                            letter-spacing: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

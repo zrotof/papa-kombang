@@ -1,0 +1,53 @@
+.rings-divider-home{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 7rem;
+    background: url("../.././../../../assets/img/home/bg-divider.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center right;
+    background-size: cover;
+    
+    .content{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-top: 10rem ;
+        padding-bottom: 10rem ;
+
+        .text-bloc{
+            color: white;
+
+            .text{
+                max-width: 470px;
+                width: 100%;
+                font-size: 2rem;
+                font-weight: 600;
+                line-height: 23px;
+                margin-bottom: 2rem;
+                text-shadow: 1px 1px 40px black;
+                line-height: 2.5rem;
+            }
+
+            .verset{
+                font-weight: bold;
+                font-size: 15px;
+                padding: 1rem 1.5rem;
+                background-color: var(--sn-gold-color);
+                color: white;
+                width: fit-content;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 1024px){
+    .rings-divider-home{
+        background-position: center;
+        
+        .content{
+            padding-top: 7rem ;
+            padding-bottom: 7rem ;
+        }
+    }
+}

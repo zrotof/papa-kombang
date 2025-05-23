@@ -1,0 +1,215 @@
+.details-home {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 7rem;
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        .top {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 50px;
+
+            p {
+                text-align: center;
+                font-size: 15px;
+                line-height: 23px;
+                max-width: 800px;
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+
+        .ceremonies {
+            display: flex;
+            flex-direction: column;
+            gap: 4rem;
+
+            .ceremony {
+                overflow: hidden;
+                display: flex;
+                align-items: center;
+                width: 100%;
+                gap: 4rem;
+                border: 1px solid rgb(179, 179, 179);
+                padding: 1rem;
+                border-radius: 10px;
+                box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+
+                .image-wrapper {
+                    position: relative;
+                    height: 350px;
+                    width: 450px;
+                    flex: none;
+                    border-radius: 10px;
+                    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+                    overflow: hidden;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+
+                .text-bloc {
+                    width: 100%;
+                    height: fit-content;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+
+                    .date {
+                        color: white;
+                        border-radius: 3px;
+                        padding: 7px 15px;
+                        font-size: 14px;
+                        font-weight: bold;
+                        background-color: var(--sn-gold-color);
+                    }
+
+                    h3 {
+                        margin-top: 15px;
+                        font-size: 1.8rem;
+                        margin-bottom: 15px;
+                    }
+
+                    p {
+                        margin-bottom: 20px;
+                        font-size: 15px;
+                        line-height: 21px;
+                    }
+
+                    button {
+                        display: flex;
+                        align-items: center;
+                        padding: 10px 20px;
+                        background-color: #fff;
+                        border: 1px solid black;
+                        width: fit-content;
+                        cursor: pointer;
+
+                        &:hover {
+                            background-color: var(--sn-green-color);
+                            color: #fff;
+                            box-shadow: #11111a1a 0 4px 16px, #11111a1a 0 8px 24px, #11111a1a 0 16px 56px;
+
+                            i {
+                                transform: rotate(45deg);
+                            }
+                        }
+
+                        span {
+                            font-size: 1rem;
+                        }
+
+                        i {
+                            margin-left: 15px;
+                            font-size: 1.2rem;
+                            transition: all .2s ease-out;
+                        }
+                    }
+                }
+            }
+
+            .church {
+                flex-direction: row-reverse;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 1024px) {
+    .details-home {
+        .content {
+            .ceremonies {
+                gap: 7rem;
+
+                .ceremony {
+                    gap: 3.5rem;
+
+                    .image-wrapper {
+                        height: 260px;
+                        width: 330px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 768px) {
+    .details-home {
+        .content {
+            .ceremonies {
+                gap: 7rem;
+
+                .ceremony {
+                    flex-direction: column;
+                    gap: 2.5rem;
+
+                    .image-wrapper {
+                        max-width: 330px;
+                        width: 100%;
+                    }
+
+                    .text-bloc {
+                        align-items: center;
+
+                        h3 {
+                            font-size: 1.85rem;
+                            margin-bottom: 12px;
+                            text-align: center;
+                        }
+
+                        p {
+                            text-align: center;
+                        }
+
+                        button {
+                            padding: 10px 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 425px) {
+    .details-home {
+        .content {
+            .ceremonies {
+                gap: 7rem;
+
+                .ceremony {
+                    flex-direction: column;
+                    gap: 2.5rem;
+
+                    .image-wrapper {
+                        height: 225px;
+                    }
+
+                    .text-bloc {
+                        h3 {
+                            font-size: 1.5rem;
+                        }
+
+                        p {
+                            text-align: center;
+                        }
+
+                        button {
+                            padding: 10px 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

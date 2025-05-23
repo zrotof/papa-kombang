@@ -19,10 +19,10 @@
                             [routerLinkActiveOptions]="{exact: true}"  
                             routerLink={{menu.url}}
                             >
-                            {{menu.label}}
                             <ng-container *ngIf="menu.icon">
                                 <i class="pi {{menu.icon}}"></i>
                             </ng-container>
+                            {{menu.label}}
                         </a>
                     </ng-container>
                     <ng-template #dropdown>

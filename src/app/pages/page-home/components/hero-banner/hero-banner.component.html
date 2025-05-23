@@ -1,0 +1,26 @@
+<div class="hero-banner">
+    <img ngSrc="../../../../../assets/img/home/hero.webp" alt="Papa Kombang" fill priority>
+    <div class="content header-container">
+        <div class="text-bloc">
+            <span class="announce" data-aos="zoom-in-right" data-aos-delay="1200">Hommage à notre Hero ✨</span>
+            <div class="names" >
+                <span data-aos="fade-right" data-aos-delay="100">Mr Kombang</span>
+                <span data-aos="fade-right" data-aos-delay="200">Zangbwalla Eloa</span>
+            </div>
+            <p class="text" data-aos="fade-right" data-aos-delay="300">Sa mémoire vit en nous, dans chaque souvenir, chaque échange, chaque instant partagé. Ensemble, on fait vivre son histoire au quotidien. Son héritage continue de nous inspirer et de nous rassembler</p>
+            <div class="dates">
+                <ng-container *ngFor="let date of dates; let i=index">
+                    <div class="date-bloc" data-aos="fade-right" [attr.data-aos-delay]="300*(i+1)" data-aos-offset="0">
+                        <span class="date"> {{date.date}} </span>
+                        <span class="day"> {{date.day}} </span>
+                        <span class="label"> {{date.label}} </span>
+                    </div>
+                </ng-container>
+            </div>
+            <a data-aos="fade-up" data-aos-delay="1200" data-aos-offset="0" href="https://drive.google.com/file/d/1Zp34Qrp8iEy358JxZ1jDBK_Nq-R40A8w/view?usp=drivesdk" target="_blank">
+                <i class="pi pi-download"></i>
+                Télécharger le programme
+            </a>
+        </div> 
+    </div>
+</div>

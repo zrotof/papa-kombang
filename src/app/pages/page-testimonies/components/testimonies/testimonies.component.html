@@ -1,0 +1,35 @@
+<div class="testimonies">
+    <div class="content my-container">
+        <h2 class="title">Temoignages</h2>
+        <p class="intro">
+            📖 Ici commencent les témoignages.
+            Des mots simples, des souvenirs vivants, parfois une anecdote, un éclat de rire, une larme retenue…
+            Chacun a vécu Papa à sa manière. Chacun l’a connu sous un angle différent.
+            Ces messages sont là pour mettre en lumière les facettes multiples de sa vie, de son cœur, de son impact ✨.
+            Tu y trouveras peut-être un écho au tien, un souvenir commun, ou simplement une parole qui te fait du bien.
+            Merci à tous ceux qui ont pris le temps d’écrire.
+            Ces témoignages forment un trésor de mémoire, et surtout, une preuve que Papa a profondément marqué les
+            siens 💛.
+        </p>
+
+        <ul>
+            <ng-container *ngFor="let testimony of testimonies">
+                <li>
+                    <img [ngSrc]="testimony.image" width="400" height="300" alt="Maman">
+                    <div class="texts-bloc">
+                        <p class="subtitle">
+                            <i class="pi pi-arrow-up"></i>
+                            <span> {{testimony.link}} </span>
+                        </p>
+                        <p class="name"> {{testimony.name}} </p>
+                        <div class="speech">
+                            <ng-container *ngFor="let paragraph of testimony.paragraphes">
+                                <p>{{paragraph}}</p>
+                            </ng-container>
+                        </div>
+                    </div>
+                </li>
+            </ng-container>
+        </ul>
+    </div>
+</div>

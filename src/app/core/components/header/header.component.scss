@@ -40,17 +40,17 @@ header{
             justify-content: center;
             align-items: center;
             margin: 0;
+            gap: 2.5rem;
         
             li{
-                margin-left: 50px;
 
                 &:last-child{
                     a{
-                        color: white;
+                        color: #f6b910;
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        padding: 7px 20px;
+                        padding: 10px 20px;
                         background-color: var(--sn-gold-color);
     
                         &:hover {
@@ -59,7 +59,7 @@ header{
                         }
 
                         i{
-                            margin-left: 7px;
+                            margin-right: 7px;
                             font-size: 1.5rem;
                         }
                     }
@@ -69,7 +69,7 @@ header{
                     text-decoration: none;
                     font-weight: 450;
                     cursor: pointer;
-                    font-size: 15px;
+                    font-size: 1rem;
                     color: inherit;
                     padding: 1rem 0;
                     font-weight: 600;

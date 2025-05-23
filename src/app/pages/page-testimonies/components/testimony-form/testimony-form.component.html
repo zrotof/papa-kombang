@@ -1,0 +1,49 @@
+<div class="civil-form">
+
+    <div class="content my-container">
+        <form *ngIf="!formSubmitted" action="https://formsubmit.co/b7698230435d65a764d1990e62095959" method="POST"
+            target="hidden_iframe" (submit)="handleSubmit()">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://kombang-zanbwalla-eloa.com/merci">
+            <input type="hidden" name="_subject" value="💌 Nouveau témoignage pour papa">
+
+            <div class="form-element">
+                <label for="lastname">Votre relation avec Papa ☺️?</label>
+                <input type="text" name="Nom" id="lastname" required
+                    placeholder="Frère, amis, collègue ? Si autre, précisez svp" />
+            </div>
+
+            <div class="form-element">
+                <label for="firstname">Prénom</label>
+                <input type="text" name="Prénom" id="firstname" required placeholder="Entrez votre prénom" />
+            </div>
+
+            <div class="form-element">
+                <label for="phone">Téléphone</label>
+                <input type="text" name="Téléphone" id="phone" required placeholder="Entrez votre téléphone" />
+            </div>
+
+            <div class="form-element">
+                <label for="message">Témoignage</label>
+                <textarea name="Message" id="message" rows="10" required
+                    placeholder="Saisissez votre témoignage"></textarea>
+            </div>
+
+            <button type="submit" class="send-button">
+                <span>Envoyez</span>
+                <i class="pi pi-send"></i>
+            </button>
+        </form>
+
+        <!-- Message après envoi -->
+        <div *ngIf="formSubmitted" class="confirmation-message">
+            <h3>Merci beaucoup 💌</h3>
+            <p>Nous avons bien reçu votre témoignage.Il serra publié dans 72h</p>
+        </div>
+
+        <!-- Iframe invisible pour FormSubmit -->
+        <iframe name="hidden_iframe" style="display: none;"></iframe>
+    </div>
+    <!-- Formulaire visible si pas encore soumis -->
+
+</div>

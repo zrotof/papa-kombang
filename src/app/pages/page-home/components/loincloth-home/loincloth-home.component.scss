@@ -1,0 +1,109 @@
+.loincloth-home {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 7rem;
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        .image-wrapper {
+            position: relative;
+            width: 100%;
+            height: 780px;
+
+            .big-image {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: top;
+            }
+        }
+
+
+        .loincloths-bloc {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 3rem;
+            background-color: white;
+            border-radius: 0 0 20px 20px;
+            width: 100%;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+            p {
+                text-align: center;
+                font-size: 15px;
+                line-height: 23px;
+                margin-bottom: 2rem;
+            }
+
+            ul {
+                display: flex;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+                gap: 3rem;
+                margin-top: 20px;
+                list-style: none;
+
+                li {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    h4 {
+                        font-size: 1.2rem;
+                        font-weight: 700;
+                    }
+
+                    .image-wrapper {
+                        position: relative;
+                        border-radius: 50%;
+                        border: 1px solid black;
+                        height: 130px;
+                        width: 130px;
+                        padding: 10px;
+                        margin: 12px 0;
+                        transition: padding 0.2s ease-in-out;
+
+                        &:hover {
+                            padding: 0;
+                        }
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            object-position: bottom;
+                            border-radius: 50%;
+                        }
+                    }
+
+                    span {
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 550px) {
+    .loincloth-home {
+        .content {
+            .image-wrapper {
+                height: 450px;
+            }
+
+            .loincloths-bloc{
+                padding: 2rem 1rem;
+
+                ul{
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}
+

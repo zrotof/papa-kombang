@@ -1,0 +1,29 @@
+<div class="loincloth-home">
+    <div class="content my-container">
+        <div class="image-wrapper">
+            <img class="big-image" ngSrc="../../../../../../../assets/img/home/jeuneK.jpg" fill alt="Papa">
+        </div>
+        <div class="loincloths-bloc" data-aos="fade-down" data-aos-duration="800" data-aos-delay="200">
+            <h2 class="title" data-aos="fade-down" data-aos-duration="500" data-aos-delay="300">Les t-shirts, le pagne et les macarons</h2>
+            <p data-aos="fade-down" data-aos-duration="500" data-aos-delay="400"> En souvenir de Papa, la famille propose un pagne commémoratif, des T-shirts floqués et de petits
+                macarons de deuil 🕊️.
+                Ces éléments nous rassemblent autour des mêmes couleurs, des mêmes motifs, du même visage qu’on a tous
+                aimé.
+                C’est une façon simple d’être unis, reconnaissables les uns aux autres, et de former un cortège digne,
+                doux et solidaire, comme il l’aurait aimé 💛.
+                Si vous souhaitez en porter, rapprochez-vous des référents dans la famille 🤍🙏🏾.</p>
+
+            <ul data-aos="fade-up" data-aos-duration="500" data-aos-delay="400">
+                <ng-container *ngFor="let loincloth of loincloths">
+                    <li>
+                        <h4> {{loincloth.name}} </h4>
+                        <div class="image-wrapper">
+                            <img [ngSrc]="loincloth.image" fill>
+                        </div>
+                        <span> {{loincloth.price}} </span>
+                    </li>
+                </ng-container>
+            </ul>
+        </div>
+    </div>
+</div>

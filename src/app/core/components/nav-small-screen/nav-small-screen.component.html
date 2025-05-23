@@ -3,11 +3,19 @@
     <ul>
         <ng-container *ngFor="let menu of menus">
             <li>
-                <a (click)=" onNavigationClicked()" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}" routerLink={{menu.url}}>
+                <a data-aos="fade-up" data-aos-offset="0" (click)=" onNavigationClicked()" routerLinkActive="active-link"
+                    [routerLinkActiveOptions]="{exact: true}" routerLink={{menu.url}}>
                     {{menu.label}}
                 </a>
-            </li>    
+            </li>
         </ng-container>
+        <li>
+            <a data-aos="fade-up" data-aos-offset="0"
+                href="https://drive.google.com/file/d/1Zp34Qrp8iEy358JxZ1jDBK_Nq-R40A8w/view?usp=drivesdk"
+                target="_blank">
+                Télécharger le programme
+            </a>
+        </li>
     </ul>
 
 </div>

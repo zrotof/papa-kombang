@@ -1,0 +1,43 @@
+<div class="details-home">
+    <div class="content my-container">
+        <div class="top">
+            <h2 class="title">DÉTAILS DES CÉRÉMONIES</h2>
+            <p>
+
+                Du lundi 2 au samedi 7 juin 2025, la famille Kombang organise les obsèques de feu Monsieur Kombang,
+                notre père, grand-père, frère et ami.
+
+                👉 À partir du lundi 2 juin, des veillées sans corps se tiennent chaque soir au domicile familial de
+                Japuma, pour préparer spirituellement ce moment d’hommage, prier ensemble et soutenir la famille dans la
+                foi.
+
+                Le jeudi 5 juin, la levée de corps ouvrira officiellement les cérémonies, suivie des grandes étapes à
+                Douala et Yaoundé.
+
+                Ces moments sont pensés pour honorer sa mémoire, célébrer sa vie, et accompagner son départ avec dignité
+                et amour, dans la foi et l’unité familiale.
+
+                Retrouvez ci-dessous le programme complet, réparti en trois temps forts, entre Douala et Yaoundé.
+            </p>
+        </div>
+
+        <ul class="ceremonies">
+            <ng-container *ngFor="let ceremony of ceremonies; let i = index">
+                <div class="ceremony" [ngClass]="(i % 2 === 0) ? '' : 'church'" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
+                    <div class="image-wrapper">
+                        <img data-aos="fade-up" data-aos-duration="500" data-aos-delay="200" [ngSrc]="ceremony.image" fill>
+                    </div>
+                    <div class="text-bloc">
+                        <span class="date" data-aos="fade-up" data-aos-duration="400" data-aos-delay="200"> {{ceremony.date}} </span>
+                        <h3 data-aos="fade-up" data-aos-duration="500" data-aos-delay="300"> {{ceremony.link}} </h3>
+                        <p data-aos="fade-up" data-aos-duration="500" data-aos-delay="400">{{ceremony.description}}</p>
+                        <button data-aos="fade-up" data-aos-duration="500" data-aos-delay="500" [routerLink]="ceremony.link">
+                            <span>Plus de detail</span>
+                            <i class="pi pi-arrow-up-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </ng-container>
+        </ul>
+    </div>
+</div>

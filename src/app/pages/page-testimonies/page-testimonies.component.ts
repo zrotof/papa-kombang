@@ -167,6 +167,41 @@ export class PageTestimoniesComponent {
       ]
     },
     {
+      image: "../../../../../../../assets/img/home/no.png",
+      link: "Oncle maternel",
+      name: "André-Marie",
+      paragraphes: [
+        "Quelle maudite journée ce 18 avril lorsque le téléphone a sonné pour nous annoncer cette triste nouvelle de la disparition de notre cousin et neveu KOMBANG, celle-ci nous a transpercé la poitrine tel un couperet.",
+        "Cher neveu, tu nous a quitté en ce moment où l'on a le plus besoin de ta présence rassurante, de tes conseils plein de sagesse et de ton humour qui était une qualité foncière chez toi. Dire que nous ne reverrons plus ce magnifique sourire très communicatif qui illuminait toujours ton visage est très difficile à accepter.",
+        "Au nom de ta famille maternelle, la famille MVENG MANG ATCHA Daniel de Landa par Atok et au mien propre nous te disons adieu et prions l'Éternel notre Dieu de t'accueillir dans son royaume."
+      ]
+    },
+    {
+      image: "../../../../../../../assets/img/home/no.png",
+      link: "Grand-père de coeur",
+      name: "Brenda",
+      paragraphes: [
+        "Grand-père chéri, ta sagesse , ton altruisme et ta générosité continue d'illuminer ta vie! Car depuis le premier jour , tu m'as prodigué des conseils qui sont mes repères dans ma vie! Tes anecdotes très hilarantes vont me manquer mais tu resteras à jamais dans mon cœur. A nous revoir très bientôt auprès de notre créateur. Love you❤️🙏🕊️"
+      ]
+    },
+    {
+      image: "../../../../../../../assets/img/home/no.png",
+      link: "Neveu",
+      name: "Narcisse",
+      paragraphes: [
+        "Tonton Kombang comme j'avais l'habitude de l'appeler était le grand frère de mon père son départ nous a complètement bouleversé ! Lorsqu'il arrivait à la maison c'était une toute autre ambiance ! Une ambiance conviviale, chaleureuse et très riche en apprentissage ! C'était lui qui réunissait et qui était le pilier de la grande famille ! Son départ laisse et laissera un énorme vide ! 😢😭😢😭",
+        "Vas et repose en paix tonton !"
+      ]
+    },
+    {
+      image: "../../../../../../../assets/img/home/no.png",
+      link: "BEAU",
+      name: "Albertine",
+      paragraphes: [
+        "Mon beau , Dieu a permis que nos familles soient unis par les liens du marriage ! Pendant les moments qui ont marqué cette union , j 'ai pu voir un homme altruiste , fiere de lui et jaloux de ce qu il appellait son heritage culturel. Nos échanges  sur le salut et l 'appartenance à Christ  ne furent pas toujours un succès , mais à chaque fois , je te promettais de recommencer la prochaine fois et tu me repondais avec un sourire dont toi seul avait le secret que ok , je t'attends. Je n 'ai pas eu l 'occasion de revenir , mais DIEU a permis que d'autres soient là pour t'aider à faire le pas ultime et malgré la douleur de ne plus te revoir , la joie de te savoir là haut est mienne! Certainement nous nous reverrons quand Christ reviendra , car ton départ plus que jamais m'interpelle  à être digne du Royaume de DIEU"
+      ]
+    },
+    {
       image: "../../../../../../../assets/img/home/you.png",
       link: "Et toi ?",
       name: "C'est quoi ton témoignage?",

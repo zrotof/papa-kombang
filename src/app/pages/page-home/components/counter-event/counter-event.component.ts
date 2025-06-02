@@ -17,7 +17,7 @@ export class CounterEventComponent implements OnInit{
     seconds: 0
   };
 
-  targetDate: Date = new Date('2025-06-07T10:00:00');
+  targetDate: Date = new Date('2025-06-05T10:00:00');
 
   constructor() { }
 

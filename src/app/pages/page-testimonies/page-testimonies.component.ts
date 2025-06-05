@@ -194,11 +194,14 @@ export class PageTestimoniesComponent {
       ]
     },
     {
-      image: "../../../../../../../assets/img/home/no.png",
+      image: "../../../../../../../assets/img/home/albertine.jpg",
       link: "BEAU",
       name: "Albertine",
       paragraphes: [
-        "Mon beau , Dieu a permis que nos familles soient unis par les liens du marriage ! Pendant les moments qui ont marqué cette union , j 'ai pu voir un homme altruiste , fiere de lui et jaloux de ce qu il appellait son heritage culturel. Nos échanges  sur le salut et l 'appartenance à Christ  ne furent pas toujours un succès , mais à chaque fois , je te promettais de recommencer la prochaine fois et tu me repondais avec un sourire dont toi seul avait le secret que ok , je t'attends. Je n 'ai pas eu l 'occasion de revenir , mais DIEU a permis que d'autres soient là pour t'aider à faire le pas ultime et malgré la douleur de ne plus te revoir , la joie de te savoir là haut est mienne! Certainement nous nous reverrons quand Christ reviendra , car ton départ plus que jamais m'interpelle  à être digne du Royaume de DIEU"
+        "Mon Beau,",
+        " Dieu a permis que nos familles soient unis par les liens du marriage ! Pendant les moments qui ont marqué cette union, j 'ai pu voir un homme altruiste, fiere de lui et jaloux de ce qu'il appellait son heritage culturel.",
+        "Nos échanges  sur le salut et l'appartenance à Christ  ne furent pas toujours un succès, mais à chaque fois, je te promettais de recommencer la prochaine fois et tu me repondais avec un sourire dont toi seul avait le secret que ok , je t'attends. Je n'ai pas eu l 'occasion de revenir , mais DIEU a permis que d'autres soient là pour t'aider à faire le pas ultime et malgré la douleur de ne plus te revoir, la joie de te savoir là haut est mienne!", 
+        "Certainement nous nous reverrons quand Christ reviendra , car ton départ plus que jamais m'interpelle  à être digne du Royaume de DIEU"
       ]
     },
     {
